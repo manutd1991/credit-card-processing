@@ -22,7 +22,7 @@ var stripe = require('stripe')('sk_test_LpRUKyVAik6UdrX9TP1uFlF8');
 //process payment get token
 app.post('/charge', function(req, res) {
     var stripeToken = req.body.stripeToken;
-    var amount = 1000;
+    var amount = 10000000;
 
 
     stripe.charges.create({
