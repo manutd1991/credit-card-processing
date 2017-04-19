@@ -1,4 +1,4 @@
- Stripe.setPublishableKey('pk_test_clEWhP5puiZZYj6l4KpoGlp4');
+ Stripe.setPublishableKey('pk_test_ap1owrDt3C63wk6c2hVs0yYk');
 
     var $btn = $('#submit');
     $btn.on('click', function() {
@@ -19,7 +19,7 @@
             var $form = $('#form');
 
 
-            
+
             var token = response.id;
 
             // Save the token into a hidden input field
@@ -38,7 +38,3 @@
 
         return false;
     });
-
-
-
-    

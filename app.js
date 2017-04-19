@@ -17,9 +17,9 @@ app.use('/', index);
 app.set('views', path.join(__dirname, 'views'));
 
 // setup stripe
-var stripe = require('stripe')('sk_test_pUQrbNArz9JENgAUVZDZUuhv');
+var stripe = require('stripe')('sk_test_LpRUKyVAik6UdrX9TP1uFlF8');
 
-//process payment get token 
+//process payment get token
 app.post('/charge', function(req, res) {
     var stripeToken = req.body.stripeToken;
     var amount = 1000;
@@ -43,6 +43,3 @@ app.post('/charge', function(req, res) {
 
 
 module.exports = app;
-
-
-
